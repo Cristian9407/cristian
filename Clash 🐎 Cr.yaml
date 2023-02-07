@@ -123,7 +123,293 @@ proxies:
   type: trojan
   password: 37236645-f32b-4bd7-9a4c-86dce415b3a6
   network: grpc
+  sni: maps.google.com# Atte: @Cristian593
+# 0985807958
+# Grupo WhatsApp: https://chat.whatsapp.com/KJxa7sWjXoIKcw9K5dg5xe
+
+port: 7890
+socks-port: 7891
+# redir-port: 7892
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+# secret: ""
+
+proxies:
+- name: US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: "37236645-f32b-4bd7-9a4c-86dce415b3a6"
+  network: grpc
+  sni: www.snr.whatsapp.net
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: "ehpgtrojangrpc"
+
+- name: EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: www.snr.whatsapp.net
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+- name: ⓶ US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: "37236645-f32b-4bd7-9a4c-86dce415b3a6"
+  network: grpc
+  sni: play.movistar.com.ec
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: "ehpgtrojangrpc"
+
+- name: ⓶ EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: play.movistar.com.ec
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+- name: ⓷ US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: "37236645-f32b-4bd7-9a4c-86dce415b3a6"
+  network: grpc
+  sni: static.xx.fbcdn.net
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: "ehpgtrojangrpc"
+
+- name: ⓷ EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: static.xx.fbcdn.net
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+- name: ⓸ US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: 37236645-f32b-4bd7-9a4c-86dce415b3a6
+  network: grpc
+  sni: www.uber.com
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: ehpgtrojangrpc
+
+- name: ⓸ EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: www.uber.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+- name: ⓹ US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: 37236645-f32b-4bd7-9a4c-86dce415b3a6
+  network: grpc
   sni: maps.google.com
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: ehpgtrojangrpc
+
+- name: ⓹ EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: maps.google.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+- name: ⓺ US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: "37236645-f32b-4bd7-9a4c-86dce415b3a6"
+  network: grpc
+  sni: youtube.com
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: "ehpgtrojangrpc"
+
+- name: ⓺ EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: youtube.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+- name: ⓻ US 🇺🇲
+  server: 45.42.160.60
+  port: 443
+  type: trojan
+  password: "37236645-f32b-4bd7-9a4c-86dce415b3a6"
+  network: grpc
+  sni: instagram.com
+  skip-cert-verify: true
+  udp: true
+  grpc-opts:
+    grpc-service-name: "ehpgtrojangrpc"
+
+- name: ⓻ EC 🇪🇨
+  server: 179.49.5.75
+  port: 2316
+  type: vmess
+  uuid: efd117ca-fc1a-44a9-9cca-edaa1de45cb0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: instagram.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: FJP8bUtn
+
+proxy-groups:
+- name: "CΛ"
+  type: select
+  proxies:
+   - Wh🟢tsApp
+   - M🔵viPlay
+   - Faceb⚪k
+   - Uber⚫
+   - G⚪gleMaps
+   - Y🔴Tube
+   - Inst🟠gram
+
+- name: "Wh🟢tsApp"
+  type: select
+  proxies:
+   - US 🇺🇲
+   - EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+- name: "M🔵viPlay"
+  type: select
+  proxies:
+   - ⓶ US 🇺🇲
+   - ⓶ EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+- name: "Faceb⚪k"
+  type: select
+  proxies:
+   - ⓷ US 🇺🇲
+   - ⓷ EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+- name: Uber⚫
+  type: select
+  proxies:
+   - ⓸ US 🇺🇲
+   - ⓸ EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+- name: G⚪gleMaps
+  type: select
+  proxies:
+   - ⓹ US 🇺🇲
+   - ⓹ EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+- name: "Y🔴Tube"
+  type: select
+  proxies:
+   - ⓺ US 🇺🇲
+   - ⓺ EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+- name: "Inst🟠gram"
+  type: select
+  proxies:
+   - ⓻ US 🇺🇲
+   - ⓻ EC 🇪🇨
+  url: http://www.google.com/generate_204
+  interval: 300
+
+tunnels:
+  # one line config
+  - tcp/udp,127.0.0.1:6553,114.114.114.114:53,CΛ
+  - tcp,127.0.0.1:6666,rds.mysql.com:3306,CΛ
+  # full yaml config
+  - network: [tcp, udp]
+    address: 127.0.0.1:7777
+    target: target.com
+    proxy: CΛ
+
+rules:
+  - DOMAIN-SUFFIX,google.com,CΛ
+  - DOMAIN-KEYWORD,google,CΛ
+  - DOMAIN,google.com,CΛ
+  - DOMAIN-SUFFIX,ad.com,CΛ
+  - SRC-IP-CIDR,192.168.1.201/32,CΛ
+  # optional param "no-resolve" for IP rules (GEOIP, IP-CIDR, IP-CIDR6)
+  - IP-CIDR,127.0.0.0/8,CΛ
+  - GEOIP,CN,CΛ
+  - DST-PORT,80,CΛ
+  - SRC-PORT,7777,CΛ
+  - MATCH,CΛ
   skip-cert-verify: true
   udp: true
   grpc-opts:
