@@ -25,7 +25,7 @@ proxies:
   grpc-opts:
     grpc-service-name: "ehpgtrojangrpc"
 
-- name: EC 🇪🇨
+- name: EC
   server: 179.49.5.75
   port: 2316
   type: vmess
@@ -211,7 +211,7 @@ proxy-groups:
   type: select
   proxies:
    - US 🇺🇲
-   - EC 🇪🇨
+   - EC
   url: http://www.google.com/generate_204
   interval: 300
 
